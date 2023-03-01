@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  avahi:
+    container_name: avahi
+    image: nivirx/avahi:0.8
+    network_mode: host
+    volumes:
+    - ./avahi:/etc/avahi:ro
